@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=land
-VENDOR=xiaomi
+DEVICE=teos
+VENDOR=vestel
 
 INITIAL_COPYRIGHT_YEAR=2018
 

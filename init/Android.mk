@@ -21,8 +21,8 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
-LOCAL_MODULE := libinit_land
+LOCAL_MODULE := libinit_teos
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := init_land.cpp
+LOCAL_SRC_FILES := init_teos.cpp
 
 include $(BUILD_STATIC_LIBRARY)

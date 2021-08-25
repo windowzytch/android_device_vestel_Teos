@@ -22,21 +22,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit from land device
+# Inherit from teos device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := land
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_land
+PRODUCT_BRAND := Vestel
+PRODUCT_DEVICE := teos
+PRODUCT_MANUFACTURER := Vestel
+PRODUCT_NAME := lineage_teos
+PRODUCT_MODEL := Venus V5
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-vestel
 
-TARGET_VENDOR_PRODUCT_NAME := land
+TARGET_VENDOR_PRODUCT_NAME := Teos
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="Teos-user 7.1.2 VTE1190 131806 release-keys"
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Xiaomi/land/land:6.0.1/MMB29M/V9.5.5.0.MALMIFA:user/release-keys \
-    PRIVATE_BUILD_DESC="land-user 6.0.1 MMB29M V9.5.5.0.MALMIFA release-keys"
-
+BUILD_FINGERPRINT := Vestel/Teos/Teos:7.1.2/VTE1190/131806:user/release-keys
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
